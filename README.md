@@ -72,5 +72,5 @@ For support, join our discord server. (coming soon)
 
 ## Want to support us ?
 
-Give a coffee ☕ : 0xCbcaE3a8022d3727400C2cdacE43751521E13e1B
+Give a coffee ☕[https://www.buymeacoffee.com/Faxe]
 
