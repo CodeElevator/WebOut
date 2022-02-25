@@ -1,5 +1,6 @@
 
 # WebOut - A school project by some french students.
+# Files will be dop in the repo when they will be completed and fonctional.
 
 WebOut is a handmade, "open-source" ( under license ) website creator that gonna help people with creating their web sotre and E-commerce using "no-code".
 
