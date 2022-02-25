@@ -61,8 +61,10 @@ For support, join our discord server. (coming soon)
 
  Faxe : Team leader and CEO of WebOut
 - [@faxeledev](https://www.github.com/faxeledev)
+ 
  Makarov : WebOut Web developper
 - [@Dont have GitHub yet](https://www.github.com/DontHaveGitHubYet)
+ 
  Ishiowa : WebOut App developper
 - [@Dont have GitHub yet](https://www.github.com/DontHaveGitHubYet)
 
