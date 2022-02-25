@@ -16,7 +16,7 @@ We can take some upgrade to apply them on our original version. ( If you think y
 - Fonctionnal website generator ( Without back-end )
 - Multiple website style
 
-## WIK Features
+## WIP Features
 
 - Live website preview
 - Hosting of your site
