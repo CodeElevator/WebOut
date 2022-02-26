@@ -1,39 +1,31 @@
-(function () {
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-  let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      dayMonth = "06/29/",
-      release = dayMonth + 2023;
-  
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > release) {
-    release = dayMonth + 2023;
-  }
-  //end
-  
-  const countDown = new Date(release).getTime(),
-      x = setInterval(function() {    
+var target_date = new Date().getTime() + (1000*3600*11712); // date
+var days, hours, minutes, seconds; // variables for time
 
-        const now = new Date().getTime(),
-              distance = countDown - now;
+var countdown = document.getElementById("tiles"); // get elements
 
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+getCountdown();
 
-        // Date reached reveal
-        if (distance < 0) {
-          document.getElementById("headline").innerText = "Website released !!";
-          document.getElementById("countdown").style.display = "none";
-          document.getElementById("content").style.display = "block";
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
+setInterval(function () { getCountdown(); }, 1000);
+
+function getCountdown(){
+
+	// find the time
+	var current_date = new Date().getTime();
+	var seconds_left = (target_date - current_date) / 1000;
+
+	days = pad( parseInt(seconds_left / 86400) );
+	seconds_left = seconds_left % 86400;
+		 
+	hours = pad( parseInt(seconds_left / 3600) );
+	seconds_left = seconds_left % 3600;
+		  
+	minutes = pad( parseInt(seconds_left / 60) );
+	seconds = pad( parseInt( seconds_left % 60 ) );
+
+	// format countdown
+	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+}
+
+function pad(n) {
+	return (n < 10 ? '0' : '') + n;
+}
