@@ -55,7 +55,7 @@ We can take some upgrade to apply them on our original version. ( If you think y
 
 ## Support
 
-For support, join our discord server. (coming soon)
+For support, join our discord server(https://discord.gg/YYsN7dJcUd).
 
 #
 ## Our members
